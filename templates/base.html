@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <div class="header-images">
+        <a href="your_link_here">
+            <img src="{{ url_for('static', filename='header.png') }}" alt="Header Image">
+        </a>
+        <a href="your_book_link">
+            <img src="{{ url_for('static', filename='book.png') }}" alt="Book Image">
+        </a>
+    </div>
+</header>
+<div class="content">
+    <div id="image-container"></div>
+</div>
+<footer>
+    <p>NI Taxi Co Registered No: NI721173</p>
+    <div class="payment-icons">
+        <img src="{{ url_for('static', filename='visa.png') }}" alt="Visa">
+        <img src="{{ url_for('static', filename='master.png') }}" alt="Mastercard">
+        <img src="{{ url_for('static', filename='amex.png') }}" alt="Amex">
+        <img src="{{ url_for('static', filename='apple.png') }}" alt="Apple Pay">
+        <img src="{{ url_for('static', filename='google.png') }}" alt="Google Wallet">
+    </div>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
